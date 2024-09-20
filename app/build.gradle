@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion 34
-    buildToolsVersion "30.0.3"
-
+    buildFeatures {
+        buildConfig = true
+    }
     defaultConfig {
         applicationId "com.example.tictactoe"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 34
         versionCode 1
         versionName "1.0"
@@ -27,6 +27,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     namespace 'com.example.tictactoe'
+    compileSdk 34
 }
 
 dependencies {
